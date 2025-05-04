@@ -157,3 +157,23 @@ body.dark-mode button:hover {
   background-color: #005f99;
 
 }
+
+
+CSS for aliging in left and right to welcome to my portfolio
+/*.intro-nav {
+  display: flex; /* Enable Flexbox for layout * justify-content: space-between; /* Space between logo and nav links */
+  align-items: center; /* Vertically center items */
+  padding: 10px 20px; /* Add padding for spacing */
+  background-color: #007acc; /* Background color */
+  color: #ffffff; /* Text color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  /*position: sticky; /* Make it stick to the top */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+@media (max-width: 768px) {
+  .intro-nav {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+}

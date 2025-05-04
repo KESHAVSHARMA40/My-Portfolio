@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Georgia', sans-serif;
   color: #282A3A;
   text-decoration: none;
   list-style: none;
@@ -113,23 +113,22 @@ body.dark-mode {
 }
 
 .profile-container {
+  position: sticky; /* Enables sticky positioning */
+  top: 0; /* Distance from the top of the viewport */
+  z-index: 1000;
   display: flex;
   align-items: center;
   padding: 20px;
   margin-top: -240px;
-  margin-left: 20px; /* Align the aside to the right */
+  margin-left: 30px; /* Align the aside to the right */
   position: relative;
+  justify-content: center;
   z-index: 1;
   background-color: #F8F8F2;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  max-width: 50%;
+  max-width: 80%;
   width: 100%;
-}
-.parent-container {
-  display: flex;
-  justify-content: flex-end; /* Align the aside to the right */
-  /* Other styles for the parent */
 }
 
 
@@ -183,6 +182,8 @@ body.dark-mode {
   font-weight: normal;
 }
 
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .profile-container {
@@ -200,7 +201,7 @@ body.dark-mode {
 
 
 .intro-text h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   font-size: 2rem;
   margin-bottom: 10px;
   color: #007acc;
@@ -213,33 +214,12 @@ body.dark-mode {
   padding: 0 20px;
 }
 
-.intro-text p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
-  color: #666;
-  margin: 0 auto 20px auto;
-  line-height: 1.5;
-  max-width: 600px;
-  font-weight: normal;
-  text-align: center;
-  padding: 0 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  transition: color 0.3s ease;
-  background-color: #F8F8F2;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 0 auto;
- 
-}
 
 .tagline blockquote {
-  font-family: 'Pacifico', cursive;
-  font-size: 1.1rem;
-  font-style: italic;
+  font-family: 'Georgia', cursive;
+  font-size: 1.2rem;
   margin: 20px auto;
-  color: #444;
+  color: #ffffff;
   max-width: 600px;
   line-height: 1.5;
   padding: 10px 20px;
