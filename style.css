@@ -2,21 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  color: #333;
+  font-family: 'Roboto', sans-serif;
+  color: #282A3A;
   text-decoration: none;
   list-style: none;
   text-align: center;
   line-height: 1.5;
   transition: all 0.3s ease;
-  background-color: #ffffff;
+  background-color: #F8F8F2;
 }
 
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F8F8F2;
+  color: #282A3A;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -79,13 +79,14 @@ body.dark-mode {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease;
   z-index: 1000;
+  
 }
 
 .banner-container {
   width: 100%;
-  height: 150px;
+  height: 300px;
   position: relative;
-  background-color: #ccc;
+  background-color: #F8F8F2;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -115,10 +116,11 @@ body.dark-mode {
   display: flex;
   align-items: center;
   padding: 20px;
-  margin-top: -40px;
+  margin-top: -240px;
+  margin-left: 20px; /* Align the aside to the right */
   position: relative;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #F8F8F2;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   max-width: 50%;
@@ -130,20 +132,7 @@ body.dark-mode {
   /* Other styles for the parent */
 }
 
-.social-media {
-  display: flex;
-  align-items: right;
-  padding: 20px;
-  margin-top: -40px;
-  position: relative;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  max-width: 50%;
-  width: 100%;
-  /* You might not need margin-left: auto if justify-content is used on the parent */
-}
+
 .profile-pic {
   width: 120px;
   height: 120px;
@@ -154,7 +143,7 @@ body.dark-mode {
   transition: transform 0.3s ease;
   margin-right: 20px;
   flex-shrink: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #F8F8F2;
   padding: 4px;
 }
 
@@ -162,10 +151,11 @@ body.dark-mode {
   margin-left: 20px;
   flex: 1;
   display: flex;
+  color: #282A3A;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #F8F8F2;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -173,6 +163,7 @@ body.dark-mode {
 }
 
 .profile-text h1 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   font-size: 1.8rem;
   margin-bottom: 10px;
   color: #007acc;
@@ -181,8 +172,9 @@ body.dark-mode {
 }
 
 .profile-text p {
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
-  color: #555;
+  color: #282A3A;
   margin-top: 5px;
   text-align: left;
   line-height: 1.5;
@@ -208,6 +200,7 @@ body.dark-mode {
 
 
 .intro-text h2 {
+  font-family: 'Playfair Display', serif;
   font-size: 2rem;
   margin-bottom: 10px;
   color: #007acc;
@@ -218,10 +211,10 @@ body.dark-mode {
   max-width: 600px;
   margin: 0 auto;
   padding: 0 20px;
-  font-weight: normal;
 }
 
 .intro-text p {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   color: #666;
   margin: 0 auto 20px auto;
@@ -233,7 +226,7 @@ body.dark-mode {
   margin-top: 10px;
   margin-bottom: 20px;
   transition: color 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #F8F8F2;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -242,6 +235,7 @@ body.dark-mode {
 }
 
 .tagline blockquote {
+  font-family: 'Pacifico', cursive;
   font-size: 1.1rem;
   font-style: italic;
   margin: 20px auto;
@@ -249,7 +243,7 @@ body.dark-mode {
   max-width: 600px;
   line-height: 1.5;
   padding: 10px 20px;
-  background-color: #f0f8ff;
+  background-color: #F8F8F2;
   border-left: 4px solid #007acc;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -260,7 +254,7 @@ body.dark-mode {
 .featured-work {
   margin-top: 30px;
   padding: 20px;
-  background-color: #fff;
+  background-color:#007acc;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease;
@@ -274,8 +268,9 @@ body.dark-mode {
 }
 
 .featured-work h3 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
-  color: #007acc;
+  color: #ffffff;
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
@@ -284,6 +279,7 @@ body.dark-mode {
   margin: 0 auto;
   padding: 0 20px;
   font-weight: normal;
+  background-color:#007acc;
 }
 
 .work-list {
@@ -299,7 +295,7 @@ body.dark-mode {
   margin: 0 auto;
   width: 100%;
   transition: background 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #F8F8F2;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -345,9 +341,10 @@ body.dark-mode {
 
 /* About Me Section */
 #about {
+  color: #ffffff;
   margin-top: 30px;
   padding: 20px;
-  background-color: #fff;
+  background-color:#007acc;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease;
@@ -360,9 +357,11 @@ body.dark-mode {
 }
 
 #about h2 {
+  color: #ffffff;
+  background-color:#007acc;
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #333;
+  color: #ffffff;
   text-align: center;
   font-weight: bold;
   margin-top: 20px;
@@ -371,7 +370,6 @@ body.dark-mode {
   margin: 0 auto;
   padding: 0 20px;
   font-weight: normal;
-  color: #007acc;
   
 }
 
@@ -379,7 +377,8 @@ body.dark-mode {
   font-size: 1.7rem;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #007acc;
+  color: #ffffff;
+  background-color:#007acc;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
@@ -388,7 +387,7 @@ body.dark-mode {
   margin: 0 auto;
   padding: 0 20px;
   font-weight: normal;
-  color: #007acc;
+  color: #ffffff;
 }
 
 #about p {
