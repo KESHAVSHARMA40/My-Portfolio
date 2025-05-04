@@ -51,29 +51,23 @@ window.addEventListener("scroll", () => {
     }
   });
 });
-const toggleBtn = document.getElementById('toggle-aside');
-  const sidebar = document.getElementById('sidebar');
-
-  toggleBtn.addEventListener('click', () => {
-    sidebar.classList.toggle('visible');
-  });
-  const toggleButton = document.getElementById('dark-mode-toggle');
-
-  // Check if dark mode is enabled in localStorage
-  if (localStorage.getItem('darkMode') === 'enabled') {
-    document.body.classList.add('dark-mode');
-    toggleButton.textContent = '🌞 Light Mode';
-  }
-
-  toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    
-    // If dark mode is active, set it in localStorage, otherwise remove it
-    if (document.body.classList.contains('dark-mode')) {
-      localStorage.setItem('darkMode', 'enabled');
-      toggleButton.textContent = '🌞 Light Mode';
-    } else {
-      localStorage.removeItem('darkMode');
-      toggleButton.textContent = '🌙 Dark Mode';
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.getElementById("dark-mode-toggle");
+    const body = document.body;
+  
+    // Check if dark mode was previously enabled
+    if (localStorage.getItem("dark-mode") === "enabled") {
+      body.classList.add("dark-mode");
     }
+  
+    toggleButton.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+  
+      // Save the user's preference in localStorage
+      if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("dark-mode", "enabled");
+      } else {
+        localStorage.setItem("dark-mode", "disabled");
+      }
+    });
   });

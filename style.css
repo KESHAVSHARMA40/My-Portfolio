@@ -15,7 +15,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   color: #333;
   line-height: 1.5;
   margin: 0;
@@ -25,6 +25,48 @@ body {
   transition: all 0.3s ease;
 }
 
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .main-header,
+.dark-mode .banner-container,
+.dark-mode .profile-container,
+.dark-mode .intro-text,
+.dark-mode .tagline blockquote,
+.dark-mode .featured-work,
+.dark-mode #about,
+.dark-mode .skills-list li,
+.dark-mode .resume-btn {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .resume-btn:hover {
+  background-color: #333333;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #007acc;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+  background-color: #005f99;
+}
 .main-header {
   position: relative;
   width: 100%;
@@ -73,17 +115,35 @@ body {
   display: flex;
   align-items: center;
   padding: 20px;
-  margin-top: -60px;
+  margin-top: -40px;
   position: relative;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 50%;
   width: 100%;
 }
+.parent-container {
+  display: flex;
+  justify-content: flex-end; /* Align the aside to the right */
+  /* Other styles for the parent */
+}
 
+.social-media {
+  display: flex;
+  align-items: right;
+  padding: 20px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 50%;
+  width: 100%;
+  /* You might not need margin-left: auto if justify-content is used on the parent */
+}
 .profile-pic {
   width: 120px;
   height: 120px;
@@ -144,122 +204,8 @@ body {
   }
 }
 
-#toggle-aside {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 2000;
-  background-color: #007acc;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
 
-}
 
-#toggle-aside:hover {
-  background-color: #005f99;
-
-}
-
-aside#sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 220px;
-  height: 100%;
-  background-color: #f5f5f5;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  padding: 40px 20px;
-  transition: transform 0.3s ease;
-  transform: translateX(-100%);
-  z-index: 1500;
-  overflow-y: auto;
-  border-radius: 0 10px 10px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-size: 1rem;
-  font-weight: normal;
-  color: #333;
-}
-
-aside#sidebar.visible {
-  transform: translateX(0);
-}
-
-aside#sidebar nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-aside#sidebar nav ul li {
-  margin: 20px 0;
-}
-
-aside#sidebar nav ul li a {
-  color: #007acc;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-aside#sidebar nav ul li a:hover {
-  color: #005f99;
-}
-body.dark-mode {
-  background-color: #333;
-  color: #f5f5f5;
-}
-
-body.dark-mode button {
-  background-color: #f5f5f5;
-  color: #333;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-}
-
-body.dark-mode button:hover {
-  background-color: #cccccc;
-
-}
-.intro-nav {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid #e0e0e0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
-  max-width: 900px;
-  width: 100%;
-  margin-top: 10px;
-  position: relative;
-  z-index: 1;
-  border-radius: 10px;
-  transition: background 0.3s ease;
-
-}
 
 .intro-text h2 {
   font-size: 2rem;
@@ -329,11 +275,10 @@ body.dark-mode button:hover {
 
 .featured-work h3 {
   font-size: 1.4rem;
-  margin-bottom: 10px;
   color: #007acc;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   line-height: 1.2;
   max-width: 600px;
   margin: 0 auto;
@@ -400,26 +345,18 @@ body.dark-mode button:hover {
 
 /* About Me Section */
 #about {
-  background-color: #ffffff;
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease;
-  margin-top: 20px;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
   position: relative;
   z-index: 1;
   text-align: center;
-  font-size: 1rem;
-  font-weight: normal;
-  color: #333;
-  line-height: 1.5;
-  padding: 20px;
-  margin: 0 auto;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-
 }
 
 #about h2 {
