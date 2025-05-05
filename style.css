@@ -42,6 +42,10 @@ body.dark-mode {
 .dark-mode .tagline blockquote,
 .dark-mode .featured-work,
 .dark-mode #about,
+.dark-mode #about h2,
+.dark-mode #about h3,
+.dark-mode #footer p,
+.dark-mode #featured-work h3,
 .dark-mode .skills-list li,
 .dark-mode .resume-btn {
   background-color: #1e1e1e;
@@ -481,4 +485,10 @@ body.dark-mode {
     font-size: 1rem;
     margin: 0 auto;
   }
+}
+
+.footer p{
+  background-color: #ffffff; /* Light background color */
+  color: #333333; /* Dark text color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
