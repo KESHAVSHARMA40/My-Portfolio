@@ -29,12 +29,16 @@ body {
 body.dark-mode {
   background-color: #121212;
   color: #ffffff;
+  
 }
 
 .dark-mode .main-header,
+.dark-mode .banner-img,
 .dark-mode .banner-container,
+.dark-mode .intro-nav,
 .dark-mode .profile-container,
-.dark-mode .intro-text,
+.dark-mode .intro-text h2,
+.dark-mode .intro-nav,
 .dark-mode .tagline blockquote,
 .dark-mode .featured-work,
 .dark-mode #about,
@@ -197,7 +201,13 @@ body.dark-mode {
   }
 }
 
-
+.intro-nav{
+  
+  background-color: #F8F8F2;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
 
 
 .intro-text h2 {
