@@ -37,16 +37,18 @@ body.dark-mode {
 .dark-mode .banner-container,
 .dark-mode .intro-nav,
 .dark-mode .profile-container,
+.dark-mode .intro-text,
 .dark-mode .intro-text h2,
 .dark-mode .intro-nav,
-.dark-mode .tagline blockquote,
+.dark-mode .intro-text blockquote,
 .dark-mode .featured-work,
+.dark-mode .featured-work h3,
+.dark-mode .work-list li a,
 .dark-mode #about,
 .dark-mode #about h2,
 .dark-mode #about h3,
 .dark-mode #footer p,
-.dark-mode #featured-work h3,
-.dark-mode .skills-list li,
+
 .dark-mode .resume-btn {
   background-color: #1e1e1e;
   color: #ffffff;
